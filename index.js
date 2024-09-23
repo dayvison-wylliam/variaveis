@@ -4,7 +4,7 @@ const entrada = prompt();
 let idade = 18;
 const anoNascimento = 2006;
 let anoAtual = 2024;
-const nomeCompleto = "Dayvison Wylliam Freitas De Melo Nascimento";
+const nomeCompleto = "Dayvison Wylliam Freitas De Melo nascimento";
 
 console.log("Meu nome é " + nomeCompleto + " nascido no ano de " + anoNascimento + " e no ano atual " + anoAtual + " completo " + idade + " anos");
 
@@ -33,14 +33,25 @@ listaDeDestinos.push("Alemanha");
 listaDeDestinos.push("Amazonas");
 console.log(listaDeDestinos);
 
-var nomeComprador = entrada ("Digite seu nome: ");
+var nomeComprador = entrada("digite seu nome: ");
 var idadeComprador = entrada("Qual a sua idade ?");
 
 
 if(idadeComprador >=18) {
+  console.log("Olá senhor(a) "+ nomeComprador);
   console.log("Comprador maior de idade");
-  console.log("destinos desponíveis: " + listaDeDestinos);
+  console.log("Destinos disponíveis: " + listaDeDestinos);
+  console.log("escolha seu destinos");
+  var contador = 0;
+
+  while(contador <9){
+    console.log(listaDeDestinos[contador]);
+    contador ++;
+  }
+  var destino = entrada("Digite o número que corresponde ao destino selecionado (0-8)");
+  console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);
 } else {
+  console.log("Olá senhor(a)" + nomeComprador);
   console.log("Infelizmente esta indisponivel passagem para menores de 18 anos");
-  console.log("você e menor de idade")
+  console.log("Você e menor de idade");
 }
