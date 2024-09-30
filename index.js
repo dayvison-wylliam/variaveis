@@ -33,9 +33,21 @@ listaDeDestinos.push("Alemanha");
 listaDeDestinos.push("Amazonas");
 console.log(listaDeDestinos);
 
+const loginCerto = "Dayvison";
+const senhaCerta = 123;
+
+var login = entrada("Qual é o seu login?");
+var senha = entrada("Qual é a sua senha?");
+
+while(login != loginCerto || senha != senhaCerta){
+  console.log ( "Login ou senha incorretos");
+  login = entrada("Qual é o seu login? ");
+  senha = entrada("digite sua senha:");
+  
+}
+
 var nomeComprador = entrada("digite seu nome: ");
 var idadeComprador = entrada("Qual a sua idade ?");
-
 
 if(idadeComprador >=18) {
   console.log("Olá senhor(a) "+ nomeComprador);
