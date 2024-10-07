@@ -16,6 +16,12 @@ console.log(idade);
 
 //agência de viagens Dubai, New York, Maldivas, Madagascar, Chile
 
+console.log("  ");
+console.log("---------------------------------------------------------");
+console.log("                Agencia de Viagens                       ");
+console.log("---------------------------------------------------------");
+console.log("  ");
+
 const listaDeDestinos = new Array(
   " Dubai",
   " New York",
@@ -23,6 +29,12 @@ const listaDeDestinos = new Array(
   " Madagascar",
   " Chile"
  );
+
+console.log("  ");
+console.log("---------------------------------------------------------");
+console.log("                Lista de destinos                        ");
+console.log("---------------------------------------------------------");
+console.log("  ");
 
 console.log(listaDeDestinos);
 console.log(listaDeDestinos[3]);
@@ -32,6 +44,14 @@ listaDeDestinos.push("Austrália");
 listaDeDestinos.push("Alemanha");
 listaDeDestinos.push("Amazonas");
 console.log(listaDeDestinos);
+
+console.log("  ");
+console.log("---------------------------------------------------------");
+console.log("                área de Login                            ");
+console.log("---------------------------------------------------------");
+console.log("  ");
+
+
 
 const loginCerto = "Dayvison";
 const senhaCerta = 123;
